@@ -2,30 +2,65 @@
 ---
 ## I. A.I (Thông số cấu hình)
 *   **Nền tảng:** Google AI Studio
-*   **Chế độ (Mode):** Code, reasoning and chat
+*   **Mode:** Code, reasoning and chat
 *   **Thông số kỹ thuật:**
     *   `Temperature`: 0.8
     *   `Media resolution`: Medium
     *   `Thinking level`: High
-    *   `Top p`: 0.8
+    *   `Top P`: 0.8
 
 ---
 
 ## II. LỆNH DÙNG (INPUT)
 
-**1. Thiết lập vai trò và cung cấp mã nguồn gốc:**
-> "Trong đoạn chat này, bạn là 1 lập trình viên full stack có nhiều năm kinh nghiệm, tôi là sinh viên sắp tốt nghiệp, nhiệm vụ của bạn là hướng dẫn, giải đáp những thắc mắc và bổ sung, sửa đổi những lỗi tôi mắc phải trong những gì tôi cung cấp cho bạn phù hợp với những yêu cầu trong bài tập của tôi. Trước tiên, hãy nhìn vào đoạn code HTML sau, chỉ nhìn đoạn code và chưa làm gì: [Mã nguồn HTML gốc]"
+**1. Thiết lập vai trò:**
+> "Trong đoạn chat này, bạn là 1 lập trình viên full stack có nhiều năm kinh nghiệm, tôi là sinh viên sắp tốt nghiệp, nhiệm vụ của bạn là hướng dẫn, giải đáp những thắc mắc và bổ sung, sửa đổi những lỗi tôi mắc phải trong những gì tôi cung cấp cho bạn phù hợp với những yêu cầu trong bài tập của tôi.
 
-**2. Yêu cầu khớp giao diện theo hình ảnh:**
+**2. Cung cấp mã nguồn gốc:**
+> Trước tiên, hãy nhìn vào đoạn code HTML sau, chỉ nhìn đoạn code và chưa làm gì:
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Học trực tuyến CNTT</title>
+</head>
+<body>
+    <table border="0" width="100%">
+        <td width="20%">
+            <ul>
+                <li><a>Trang chủ</a></li>
+                <li><a>Khóa học</a></li>
+                <li><a>Diễn đàn</a></li>
+                <li><a>Liên hệ</a></li>
+            </ul>
+        </td>
+
+        <td width="80%">
+            <h1>Học trực tuyến Công nghệ thông tin</h1>
+            <h2>Các khóa học:</h2>
+            <ol>
+                <li>Lập trình cơ bản</li>
+                <li>Cấu trúc dữ liệu</li>
+                <li>Thiết kế web</li>
+            </ol>
+        </td>
+    </table>
+</body>
+</html>
+```
+
+**3. Yêu cầu khớp giao diện theo hình ảnh:**
 > "Ok giờ từ đoạn code đó, giúp tôi thêm những thứ cần thiết khác miễn sao giống với bức ảnh này nhất có thể, chú ý: không làm thay đổi nội dung trong <body> của đoạn mã mà em cung cấp."
+<img width="926" height="417" alt="Screenshot 2026-03-11 080327" src="https://github.com/user-attachments/assets/5821a25a-e6b5-4788-b1dc-4776f8bdea74" />
 
-**3. Yêu cầu mở rộng không gian:**
+**4. Mở rộng không gian:**
 > "Tháo khung giới hạn của đoạn mã mà thầy đã cung cấp."
 
-**4. Yêu cầu tối ưu hóa cấu trúc (Kích hoạt Code Execution):**
+**5. Yêu cầu tối ưu hóa cấu trúc (Kích hoạt Code Execution):**
 > "Giờ hãy tối ưu lại chính code của thầy vừa hướng dẫn một cách hợp lý nhất để dễ phát triển thêm những tính khác sau này. Không làm thay đổi <body>."
 
-**5. Yêu cầu tinh chỉnh hiển thị:**
+**6. Yêu cầu tinh chỉnh hiển thị:**
 > "Ở phần nội dung bên phải, không cần phải đổi màu vùng đang được chọn."
 
 ---
@@ -162,5 +197,3 @@
 ```
 
 ---
-
-Hy vọng file README này sẽ giúp ích cho em trong việc nộp bài hoặc lưu trữ dự án. Chúc em có một kỳ tốt nghiệp thật thành công!
