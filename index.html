@@ -3,6 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Học trực tuyến CNTT</title>
+    <style>
+        /* 1. KHAI BÁO BIẾN */
+        :root {
+            --bg-sidebar: #eeeeee;
+            --bg-active-sidebar: #7b7b7b; /* Chỉ dùng cho menu bên trái */
+            --text-main: #000000;
+            --text-white: #ffffff;
+            --font-main: "Times New Roman", Times, serif;
+        }
+        
+
+        /* 2. RESET & CẤU HÌNH CHUNG */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: var(--font-main);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        /* 3. CỘT BÊN TRÁI (SIDEBAR) */
+        td[width="20%"] {
+            background-color: var(--bg-sidebar);
+            vertical-align: top;
+            padding: 0;
+            border-right: 1px solid #ddd;
+        }
+
+        /* Định dạng menu bên trái */
+        td[width="20%"] ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* CHỈ ĐỔI MÀU VÙNG CHỌN CHO MENU BÊN TRÁI */
+        td[width="20%"] li:first-child {
+            background-color: var(--bg-active-sidebar);
+        }
+
+        td[width="20%"] li:first-child a {
+            color: var(--text-white);
+        }
+
+        td[width="20%"] a {
+            text-decoration: none;
+            color: var(--text-main);
+            display: block;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+        }
+
+        /* 4. CỘT BÊN PHẢI (NỘI DUNG CHÍNH) */
+        td[width="80%"] {
+            vertical-align: top;
+            padding: 40px 60px;
+            background-color: white;
+        }
+
+        /* Giữ danh sách bên phải nguyên bản, không bị ảnh hưởng bởi CSS vùng chọn */
+        td[width="80%"] ol {
+            margin-top: 15px;
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+
+        td[width="80%"] li {
+            background-color: transparent; /* Đảm bảo không có màu nền */
+            color: var(--text-main);       /* Đảm bảo chữ luôn màu đen */
+        }
+
+        /* 5. TIÊU ĐỀ */
+        h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 1.5rem;
+        }
+
+        /* 6. RESPONSIVE */
+        @media (max-width: 768px) {
+            table, tr, td {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <table border="0" width="100%">
@@ -25,6 +122,5 @@
             </ol>
         </td>
     </table>
-
 </body>
 </html>
