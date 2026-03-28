@@ -20,7 +20,8 @@
 **2. Cung cấp mã nguồn gốc:**
 
 > Em có đoạn code HTML như sau:
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -99,7 +100,8 @@
 
 ## III. KẾT QUẢ (OUTPUT)
 
-```<style>
+```
+<style>
     /* 1. Reset và Font chữ hệ thống của Apple */
     body {
       margin: 0;
